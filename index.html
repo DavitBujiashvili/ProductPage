@@ -1,43 +1,133 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,400italic,700,700italic,900,900italic" rel="stylesheet">
     <title>Page Title</title>
 </head>
 <body>
   <header id="header">
-    <img src="#" alt="Girl in a jacket" id="header-img">
+    <img src="images/logo.JPG" alt="logo" id="header-img">
     <nav id="nav-bar">
-      <a class="nav-link" href="/html/">HTML</a>
-      <a class="nav-link"  href="/css/">CSS</a>
-      <a class="nav-link" href="/js/">JavaScript</a>
-      <a class="nav-link" href="/python/">Python</a>
+       <a class="nav-link" href="#features">Features</a>
+       <a class="nav-link" href="#how-it-works">How It Works</a>
+        <a class="nav-link" href="#pricing">Pricing</a>
     </nav>
   </header>
 
 
-<video id="video controls>
-  <source src="movie.mp4" type="video/mp4">
-  <source src="movie.ogg" type="video/ogg">
-  Your browser does not support the video tag.
-</video>
+  <form  action="https://www.freecodecamp.com/email-submit" id="form">
+    <div class="container">
+      <h1 class="centerText">Handcrafted, home-made masterpieces
+      </h1>
+  
+      <input type="email" placeholder="Enter Email" name="email" id="email" required>
+      
+    </div>
+  
+    <div class="submitButton">
+        <input type="submit" id="submit" value="get started">
+    </div>
+  </form>
 
-<form  action="https://www.freecodecamp.com/email-submit" id="form">
-  <div class="container">
-    <h1>Register</h1>
-    <p>Please fill in this form to create an account.</p>
-    <hr>
+  <section id="features">
+    <div class="row">
+      <div class="icon">
+        <img src="images/fire.JPG" alt="logo" id="fire-icon">
+      </div>
+      <div class="description">
+        <h1>Premium Materials</h1>
+        <p>Our trombones use the shiniest brass which is sourced locally. This will increase the longevity of your purchase.</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="icon">
+        <img src="images/truck.JPG" alt="logo" id="truck-icon">
+      </div>
+      <div class="description">
+        <h1>Premium Materials</h1>
+        <p>Our trombones use the shiniest brass which is sourced locally. This will increase the longevity of your purchase.</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="icon">
+        <img src="images/battery.JPG" alt="logo" id="battery-icon">
+      </div>
+      <div class="description">
+        <h1>Premium Materials</h1>
+        <p>Our trombones use the shiniest brass which is sourced locally. This will increase the longevity of your purchase.</p>
+      </div>
+    </div>
+  </section>
 
-    <label for="email"><b>Email</b></label>
-    <input type="email" placeholder="Enter Email" name="email" id="email" required>
+  </section>
+
+<section id="how-it-works">
+  <iframe id="video" height="315" src="https://www.youtube-nocookie.com/embed/y8Yv4pnO7qc?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen=""></iframe>
+</section>
+
+<section id="pricing">
+  <div class="product_container">
+    <div class="product__head">
+     <h3>TENOR TROMBONE</h3>
+    </div>
+    <div class="product__body">
+      <h2>$600</h2>
+      <ul>
+        <li>Lorem ipsum.</li>
+        <li>Lorem ipsum.</li>
+        <li>Lorem ipsum dolor.</li>
+        <li>Lorem ipsum.</li>
+      </ul>
+      <button class="btn">Select</button>
+    </div>
+  </div>
+  <div class="product_container">
+    <div class="product__head">
+      <h3>TENOR TROMBONE</h3>
+    </div>
+    <div class="product__body">
+      <h2>$600</h2>
+      <ul>
+        <li>Lorem ipsum.</li>
+        <li>Lorem ipsum.</li>
+        <li>Lorem ipsum dolor.</li>
+        <li>Lorem ipsum.</li>
+      </ul>
+      <button class="btn">Select</button>
+    </div>
+   
+  </div>
+  <div class="product_container">
+    <div class="product__head">
+      <h3>TENOR TROMBONE</h3>
+    </div>
+    <div class="product__body">
+      <h2>$600</h2>
+      <ul>
+        <li>Lorem ipsum.</li>
+        <li>Lorem ipsum.</li>
+        <li>Lorem ipsum dolor.</li>
+        <li>Lorem ipsum.</li>
+      </ul>
+      <button class="btn">Select</button>
+    </div>
     
   </div>
-
-  <div >
-      <input type="submit" id="submit" value="Submit">
-  </div>
-</form>
-
-
+</section>
+<script>
+  window.onscroll = function() {myFunction()};
+  
+  var header = document.getElementById("header");
+  var sticky = header.offsetTop;
+  
+  function myFunction() {
+    if (window.pageYOffset > sticky) {
+      header.classList.add("sticky");
+    } else {
+      header.classList.remove("sticky");
+    }
+  }
+  </script>
 </body>
 </html>
